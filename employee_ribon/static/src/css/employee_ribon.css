@@ -1,0 +1,52 @@
+.employeeribbon_green {
+    width: 60px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: -10px;
+    /* top: -12px; */
+    text-align: center;
+    border-radius: 25px;
+    /* transform: rotate(20deg); */
+    background-color: #35979c;
+    color: white;
+  }
+.employeeribbon_yellow {
+    width: 90px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: -10px;
+    /* top: -12px; */
+    text-align: center;
+    border-radius: 25px;
+    /* transform: rotate(20deg); */
+    background-color: #f7b733;
+    color: white;
+  }
+.employeeribbon_red {
+    width: 60px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: -10px;
+    /* top: -12px; */
+    text-align: center;
+    border-radius: 25px;
+    /* transform: rotate(20deg); */
+    background-color: 	#fc4a14;
+    color: white;
+  }
+.employeeribbon_to_define {
+    width: 60px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: -10px;
+    /* top: -12px; */
+    text-align: center;
+    border-radius: 25px;
+    /* transform: rotate(20deg); */
+    background-color: 	#aaaaaa;
+    color: white;
+  }

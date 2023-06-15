@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_kanban_view_employees_inherit_ribon" model="ir.ui.view">
+        <field name="name">hr.employee.kanban.inherit.ribon</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.hr_kanban_view_employees"/>
+        <field name="arch" type="xml">
+            <xpath expr="//span[@name='presence_absent_active']" position="replace">
+                <span class="employeeribbon_yellow"> Present (NA) </span>
+            </xpath>
+            <xpath expr="//span[@name='presence_present']" position="replace">
+                <span class="employeeribbon_green"> Present </span>
+            </xpath>
+            <xpath expr="//span[@name='presence_absent']" position="replace">
+                <span class="employeeribbon_red"> Absent </span>
+            </xpath>           
+            <xpath expr="//span[@name='presence_to_define']" position="replace">
+                <span class="employeeribbon_to_define"> To define </span>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_employee_tree_inherit_anniversary" model="ir.ui.view">
+        <field name="name">hr.employee.tree.anniversary</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='work_email']" position="after">
+                <field name="hr_icon_display" string="Attendance Info" widget="attendance_ribon" />
+            </xpath>
+        </field>
+    </record>    
+</odoo>
